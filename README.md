@@ -22,7 +22,7 @@ What this is not
 This is not a Metaverse as a Service. I'd recommend framevr.io for that kind of thing.
 
 Acknowledgments and Thanks
-I would like to express my deep gratitude to FrameVR for their generosity and curiosity
+I would like to express my deep gratitude to framevr.io for their generosity and curiosity
 in allowing me to fork the decommissioned backend as open source.
 
 The decision to embrace the open-source spirit not only demonstrates
