@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "lib": ["DOM", "ES2020"],
+    "baseUrl": ".",
+    "paths": {
+      "@core/*": ["webapp/core/*"],
+      "@workers/*": ["webapp/workers/*"]
+    }
+  },
+  "exclude": ["node_modules","dist", "doc", "test"]
+}

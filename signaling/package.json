@@ -1,0 +1,44 @@
+{
+  "private": true,
+  "name": "public project",
+  "version": "0.0.1",
+  "author": "Fork me!",
+  "contributors": [],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/somewhere out there"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=16"
+  },
+  "config": {
+    "secureport": "8443",
+    "insecureport": "8080",
+    "apissl": "true",
+    "apiserver": "0.0.0.0"
+  },
+  "scripts": {
+    "clean": "rm -rf node_modules",
+    "clean:all": "rm -rf node_modules; git reset --hard",
+    "lint": "prettier",
+    "lint:fix": "prettier --write",
+    "debug": "nodemon --prof server.ts",
+    "dev": "nodemon server.ts",
+    "prod": "NODE_ENV=production node -r ts-node/register --prof server.ts"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+  },
+  "nodemonConfig": {
+    "watch": [
+      "server.ts",
+      "./api/*",
+      "./libs/*"
+    ]
+  },
+  "lint-staged": {
+    "*.{js,ts}": "eslint"
+  }
+}
